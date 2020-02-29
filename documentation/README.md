@@ -1,71 +1,99 @@
-# Documentation
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Team-Sitecore%20Triangle.PNG" /><br />
 
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
+# Sitecore Triangle
 
-Examples of things to include are the following.
+Sitecore Hackathon 2020 entry by Team **Sitecore Triangle**
 
-## Summary
+Topic: **Sitecore Hackathon Website – This idea is sooo meta! Several years have passed with the current version and it’s in need of a refresh.**
 
-**Category:** Hackathon Category
+Youtube video:
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+---
 
-## Pre-requisites
+The **Sitecore Triangle** team picked-up the above mentioned topic and used following products/technologies:
 
-Does your module rely on other Sitecore modules or frameworks?
+* **[Sitecore Experience Accelerator](https://doc.sitecore.com/users/sxa/17/sitecore-experience-accelerator/en/introducing-sitecore-experience-accelerator.html)**
+* Bootstrap 4
+* ASP.NET MVC
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+## Module Purpose
+Current **Sitecore Hackathon Website** is not very user interactive and not easy to maintain. The idea here is to use **[Sitecore Experience Accelerator](https://doc.sitecore.com/users/sxa/17/sitecore-experience-accelerator/en/introducing-sitecore-experience-accelerator.html)** module to:
+* Help content teams create, edit, and deploy web content across channels in less time
+* Easily change page components using drag-and-drop functionality
+* Enjoy a CMS with WYSIWYG (What You See Is What You Get) editing
+* Reuse pre-built components, templates, and layouts
+* Quickly get your websites up and running
+* Greatly reduce the time needed for custom development
+#### Features include:
+* Sample Site
+* **Home Page** will provide:
+    * Promo/Hero Banner: Content Author can setup rich content
+    * Listing of Last 03 Hackathon events
+* Content Author can create **Judge details (rich text)** for every year Hackathon event
+* Content Author can manage the **Hero banner/Promo Content** for the Home Page
+* End User can submit the **Hackathon registration request** via **Custom Hackathon Registration Form**
+* **Hackathon Registration Form** having **time limit validation** for Hackathon registration and after that user will see the custom message and this message can be setup by the Content Author
+* Once **Hackathon Registration Form** submitted by the End user then **Thank You message** would be visible to user and this message can be setup by the Content Author
+* After submission of **Hackathon Registration Form** team details would be stored in the **MASTER DB** with this Content Author/Admin can review the content and publish after validaiton to **WEB DB**
+* End user can view **listing of Hackathon's**
+* Each year **Hackathon** will provide:
+    * Hackathon Details: Content Author can setup rich content
+    * Listing of Teams participating in Hackathon
+    * Listing of Judge details (rich text) in Hackathon
 
-## Installation
+#### Limitations:
+* No valiation on Form fields
+* All fields are mandatory currently
+* No autmation on publishing
+* No registration confirmation email
+* No Personalization
+* Currently each Hackathon page displaying listing of Year 2020 Participants only, and this can be avoided by creating custom query and use in the PageList component
+* Site User Interface: We have tried our best to on UI part but can't compete with UI developer :)
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+## Module Sitecore Hackathon Category
+**Sitecore Hackathon Website – This idea is sooo meta! Several years have passed with the current version and it’s in need of a refresh.**
 
-## Configuration
+## How does the end user use the Module?
+#### Pre-requisites
+This module depends on the following
+* Sitecore 9.3 Initial Release
+* Sitecore Powershell Extensions (SPE)
+* Sitecore Experience Accelerator
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
+#### Configuration/Setup
+* Download the Sitecore Package (https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/SitecoreHackathon2020.zip) which contains:
+    * Required Template
+    * Required Content Tree items
+* Install the Downloaded Sitecore Package
+* After installation you will see following items in the content tree:
+    * **Site Templates:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Site Templates.png" /><br />
+    * **Site:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Site.png" /><br />
+    * **Media Library:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Media Library.png" /><br />
+    * **Page/Partial Design:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Page-Partial Design.png" /><br />
+* Each Year following configuration/item needs to be created/changes:
+    * Create the New Year item at **/sitecore/content/Sitecore/Hackathon/HackathonTeams/** like **2021**
+    * Inside new year folder i.e. 2021 (which created above), create **Judge Folder** and then create required **Judge** items.
+    * Inside new year folder i.e. 2021 (which created above), create **Participant Folder**.
+    * Copy path of newly created **Participant Folder** and goto **/sitecore/content/Sitecore/Hackathon/Data/HackathonTeam/HackathonRegistration** and past the url. This url used **Custom Hackathon Registration Form** to store the participant details.
+    
+   
 
-Remember you are using Markdown, you can provide code samples too:
+## Screenshots
+#### Home Page
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/HomePage.jpg" /><br />
 
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
+#### Hackathon Registration Form
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-RegistrationForm.png" /><br />
 
-## Usage
+#### Listing of Hackathon's
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-Listing.png" /><br />
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+#### Hackathon Details
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-Details.png" /><br />
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
-
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
-
-## Video
-
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
