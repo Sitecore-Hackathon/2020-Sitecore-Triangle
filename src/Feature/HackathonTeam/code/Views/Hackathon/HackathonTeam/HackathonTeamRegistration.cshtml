@@ -1,0 +1,239 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Sitecore.Mvc
+@using Triangle.Feature.HackathonTeam
+@model Triangle.Feature.HackathonTeam.Models.HackathonTeam
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{
+    <div @Html.Sxa().Component("HackathonTeamRegistration", Model.Attributes)>
+        <div class="component-content">
+            @if (Model.RegistraionEndDate < System.DateTime.Now)
+            {
+                <div>
+                    <h1>@Html.Raw(Model.RegistraionEndMessage)</h1>
+                </div>
+            }
+            else
+            {
+                using (Html.BeginForm("HackathonTeamRegistration", "HackathonTeam", FormMethod.Post))
+                {
+                    <section class="container component-hackathonteamregistration">
+                        <div class="hackathonteamregistration-container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="hero-title">
+                                        <h1>@Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameTitle)</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="hero-title">
+                                        <h3>@Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameDescription)</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5">
+                                    <div class="hero-title">
+                                        @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameTeamName)
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-sm-5">
+                                    <div class="hero-title">
+
+                                        @Html.EditorFor(x => x.TeamMember.TeamName)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5">
+                                    <div class="hero-title">
+                                        @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameTeamDescription)
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-sm-5">
+                                    <div class="hero-title">
+
+                                        @Html.EditorFor(x => x.TeamMember.TeamDescription)
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            <b>@Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameMem1Caption)</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-5">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameFirstname)
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 col-sm-5">
+                                        <div class="hero-title">
+
+                                            @Html.EditorFor(x => x.TeamMember.Mem1Firstname)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-5">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameLastname)
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 col-sm-5">
+                                        <div class="hero-title">
+                                            @Html.EditorFor(x => x.TeamMember.Mem1Lastname)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameFacebook)
+                                            @Html.EditorFor(x => x.TeamMember.Mem1FacebookURL)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameLinkedIn)
+                                            @Html.EditorFor(x => x.TeamMember.Mem1LinkedInURL)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameTwitter)
+                                            @Html.EditorFor(x => x.TeamMember.Mem1TwitterURL)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            <b>@Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameMem2Caption)</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameFirstname)
+                                            @Html.EditorFor(x => x.TeamMember.Mem2Firstname)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameLastname)
+                                            @Html.EditorFor(x => x.TeamMember.Mem2Lastname)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameFacebook)
+                                            @Html.EditorFor(x => x.TeamMember.Mem2FacebookURL)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameLinkedIn)
+                                            @Html.EditorFor(x => x.TeamMember.Mem2LinkedInURL)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameTwitter)
+                                            @Html.EditorFor(x => x.TeamMember.Mem2TwitterURL)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            <b>@Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameMem3Caption)</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameFirstname)
+                                            @Html.EditorFor(x => x.TeamMember.Mem3Firstname)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameLastname)
+                                            @Html.EditorFor(x => x.TeamMember.Mem3Lastname)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameFacebook)
+                                            @Html.EditorFor(x => x.TeamMember.Mem3FacebookURL)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameLinkedIn)
+                                            @Html.EditorFor(x => x.TeamMember.Mem3LinkedInURL)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="hero-title">
+                                            @Html.Sitecore().Field(Template.HackathonRegistration.Fields.FieldnameTwitter)
+                                            @Html.EditorFor(x => x.TeamMember.Mem3TwitterURL)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                @Html.HiddenFor(x => x.ResponseThankYou)
+                                @Html.HiddenFor(x => x.ParticipantPathGuid)
+                            </div>
+
+                            <div class="row">
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    </section>
+                }
+            }
+        </div>
+    </div>
+}

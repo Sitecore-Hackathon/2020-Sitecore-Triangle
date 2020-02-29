@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sitecore.XA.Foundation.RenderingVariants</name>
+    </assembly>
+    <members>
+        <member name="M:Sitecore.XA.Foundation.RenderingVariants.Extensions.BaseVariantFieldExtensions.DiscoverFieldName(Sitecore.XA.Foundation.Variants.Abstractions.Fields.BaseVariantField)">
+            <summary>
+            Get field name which is used in the variant.
+            <para>
+            Variant field can be one of those classes: VariantField, VariantReference, VariantText, Token and VariantSection.
+            Field name is stored just on VariantField and VariantReference. In other cases constant strings will be returned.
+            </para>      
+            </summary>
+            <returns>Name of the variant field</returns>
+        </member>
+        <member name="M:Sitecore.XA.Foundation.RenderingVariants.Extensions.BaseVariantFieldExtensions.GetFieldName(Sitecore.XA.Foundation.Variants.Abstractions.Fields.BaseVariantField)">
+            <summary>
+            Return field name based on the variant field implementation
+            </summary>
+        </member>
+        <member name="T:Sitecore.XA.Foundation.RenderingVariants.Fields.RenderingVariantFieldBase">
+            <summary>
+            Base class for all variant fields
+            </summary>
+        </member>
+        <member name="M:Sitecore.XA.Foundation.RenderingVariants.Fields.RenderingVariantFieldBase.IsMarkedAsLink">
+            <summary>
+            Checks if variant field is marked as a link
+            </summary>
+        </member>
+        <member name="P:Sitecore.XA.Foundation.RenderingVariants.Fields.VariantField.FallbackFields">
+            <summary>
+            List with fallback fields. This list also includes current element.
+            </summary>
+        </member>
+        <member name="M:Sitecore.XA.Foundation.RenderingVariants.Fields.VariantField.Clone(Sitecore.XA.Foundation.RenderingVariants.Fields.VariantField)">
+            <summary>
+            Clone whole VariantField without fallback fields
+            </summary>
+            <remarks>
+            This is used while resolving fallback fields
+            </remarks>
+        </member>
+        <member name="P:Sitecore.XA.Foundation.RenderingVariants.Fields.VariantPlaceholder.Number">
+            <summary>
+            Number of placeholder - in case of multiple Variant Placehoder items in variant configuration, this will hold the number of specific placeholder just like in Column Splitter
+            </summary>
+        </member>
+        <member name="P:Sitecore.XA.Foundation.RenderingVariants.Fields.VariantPlaceholder.RenderingName">
+            <summary>
+            Setting this property to Rendering.Name will give you normalized PlaceholderKeyPrefix property of this object
+            </summary>
+        </member>
+        <member name="P:Sitecore.XA.Foundation.RenderingVariants.Fields.VariantPlaceholder.PlaceholderKeyPrefix">
+            <summary>
+            To set this property, modify ComponentName property of this object.
+            Returns Placeholder Key Prefix, which maps to Placeholder Settings Item
+            </summary>
+        </member>
+        <member name="M:Sitecore.XA.Foundation.RenderingVariants.Pipelines.RenderVariantField.RenderVariantField.IsFromSnippedAndEmpty(Sitecore.XA.Foundation.RenderingVariants.Fields.VariantField,Sitecore.Data.Items.Item,System.Boolean)">
+            <summary>
+            Checks if sometimes comes from partial design and the field is empty
+            </summary>
+        </member>
+        <member name="M:Sitecore.XA.Foundation.RenderingVariants.Pipelines.RenderVariantField.RenderVariantField.IsEmptyFieldToRender(Sitecore.XA.Foundation.RenderingVariants.Fields.VariantField,Sitecore.Data.Items.Item)">
+            <summary>
+            Check if variant is configured to render empty fields and if field is empty
+            </summary>
+        </member>
+        <member name="T:Sitecore.XA.Foundation.RenderingVariants.Rules.VariantFieldInsertRule">
+            <summary>
+            Class responsible for provide insert options for variant field and variant date field item.   
+            </summary>
+            <remarks>
+            The main funcionality of that class is not to allow adding any fields for items defined as fallbacks. We can easy detect fallback 
+            field by checking if current item parent is VariantField or VariantDate.
+            </remarks>
+        </member>
+    </members>
+</doc>

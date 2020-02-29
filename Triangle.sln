@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{97D14E6D-7DEF-4849-BC85-2E9DA03A3723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{FC4A7FEF-72AF-4D4D-AA15-41E45E51D253}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{F8B5868F-0AE7-4455-9F93-FA73352310A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HackathonTeam", "HackathonTeam", "{17CAC687-E715-4126-B7E5-FF2BEEB5E74E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle.Feature.HackathonTeam", "src\Feature\HackathonTeam\code\Triangle.Feature.HackathonTeam.csproj", "{5BF73662-6E5D-4ECD-8F0E-FA54F3AC105F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BF73662-6E5D-4ECD-8F0E-FA54F3AC105F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF73662-6E5D-4ECD-8F0E-FA54F3AC105F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF73662-6E5D-4ECD-8F0E-FA54F3AC105F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF73662-6E5D-4ECD-8F0E-FA54F3AC105F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17CAC687-E715-4126-B7E5-FF2BEEB5E74E} = {FC4A7FEF-72AF-4D4D-AA15-41E45E51D253}
+		{5BF73662-6E5D-4ECD-8F0E-FA54F3AC105F} = {17CAC687-E715-4126-B7E5-FF2BEEB5E74E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ED2E8C2-8E06-4612-897A-DE5DF9CDADEA}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

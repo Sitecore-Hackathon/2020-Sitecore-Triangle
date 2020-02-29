@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sitecore.XA.Foundation.Variants.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="M:Sitecore.XA.Foundation.Variants.Abstractions.DataSource.AvailableRenderingVariants.GetRenderingName(Sitecore.Data.Items.Item,System.String)">
+            <summary>
+            Gets the name of the sublayout for which rendering parameters we are opening
+            </summary>
+        </member>
+        <member name="M:Sitecore.XA.Foundation.Variants.Abstractions.DataSource.AvailableRenderingVariants.GetPageTemplateId(Sitecore.Data.Items.Item,System.String)">
+            <summary>
+            Get id of the page template, on which component is placed
+            </summary>
+        </member>
+        <member name="P:Sitecore.XA.Foundation.Variants.Abstractions.Pipelines.RenderVariantField.RenderVariantFieldArgs.Model">
+            <summary>
+            Model which properties can be referenced as a data source while redering
+            </summary>
+        </member>
+        <member name="T:Sitecore.XA.Foundation.Variants.Abstractions.Renderers.VariantRenderer">
+            <summary>
+            Renders certain variant of whole tree of variant items
+            </summary>
+        </member>
+    </members>
+</doc>
