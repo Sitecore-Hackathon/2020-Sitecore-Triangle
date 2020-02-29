@@ -66,6 +66,17 @@ This module depends on the following
 * Download the Sitecore Package which contains:
     * Required Template
     * Required Content Tree items
+* Install the Downloaded Sitecore Package
+* After installation you will see following items in the content tree:
+    * **Site Templates:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Site Templates.png" /><br />
+    * **Site:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Site.png" /><br />
+    * **Media Library:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Media Library.png" /><br />
+    * **Page/Partial Design:** <br/>
+      <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Page-Partial Design.png" /><br />
+
     
 
 ## Screenshots
