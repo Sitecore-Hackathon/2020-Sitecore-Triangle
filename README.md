@@ -27,6 +27,8 @@ This solution will be used to create the **[Sitecore Experience Accelerator](htt
 * Content Author can create Judge details (rich text) for every year Hackathon event
 * Content Author can manage the Hero banner/Promo Content for the Home Page
 * End User can submit the Hackathon registration request via **Hackathon Registration Form**
+    * **Limitations**
+        * Not valiation on Form fields
 * **Hackathon Registration Form** having time limit validation for Hackathon registration and after that user will see the custom message and this message can be setup by the Content Author
 * Once **Hackathon Registration Form** submitted by the End user then Thank You message would be visible to user and this message can be setup by the Content Author
 * After submission of **Hackathon Registration Form** team details would be stored in the **MASTER DB** with this Content Author/Admin can review the content and publish after validaiton to **WEB DB**
