@@ -18,7 +18,13 @@ The **Sitecore Triangle** team picked-up the above mentioned topic and used foll
 * ASP.NET MVC
 
 ## Module Purpose
-This solution will be used to create the **[Sitecore Experience Accelerator](https://doc.sitecore.com/users/sxa/17/sitecore-experience-accelerator/en/introducing-sitecore-experience-accelerator.html)** based Sitecore Hackathon website.
+Current **Sitecore Hackathon Website** is not very user interactive and not easy to maintain. The idea here is to use **[Sitecore Experience Accelerator](https://doc.sitecore.com/users/sxa/17/sitecore-experience-accelerator/en/introducing-sitecore-experience-accelerator.html)** module to:
+* Help content teams create, edit, and deploy web content across channels in less time
+* Easily change page components using drag-and-drop functionality
+* Enjoy a CMS with WYSIWYG (What You See Is What You Get) editing
+* Reuse pre-built components, templates, and layouts
+* Quickly get your websites up and running
+* Greatly reduce the time needed for custom development
 #### Features include:
 * Sample Site
 * **Home Page** will provide:
@@ -27,8 +33,6 @@ This solution will be used to create the **[Sitecore Experience Accelerator](htt
 * Content Author can create Judge details (rich text) for every year Hackathon event
 * Content Author can manage the Hero banner/Promo Content for the Home Page
 * End User can submit the Hackathon registration request via **Hackathon Registration Form**
-    * **Limitations**
-        * Not valiation on Form fields
 * **Hackathon Registration Form** having time limit validation for Hackathon registration and after that user will see the custom message and this message can be setup by the Content Author
 * Once **Hackathon Registration Form** submitted by the End user then Thank You message would be visible to user and this message can be setup by the Content Author
 * After submission of **Hackathon Registration Form** team details would be stored in the **MASTER DB** with this Content Author/Admin can review the content and publish after validaiton to **WEB DB**
@@ -38,10 +42,18 @@ This solution will be used to create the **[Sitecore Experience Accelerator](htt
     * Listing of Teams participating in Hackathon
     * Listing of Judge details (rich text) in Hackathon
 
+#### Limitations:
+* No valiation on Form fields
+* All fields are mandatory currently
+* No autmation on publishing
+* No registration confirmation email
+* No Personalization
+* Currently each Hackathon page displaying listing of Year 2020 Participants only, and this can be avoided by creating custom query and use in the PageList component
+* Site User Interface: We have tried our best to on UI part but can't compete with UI developer :)
 
 
 ## Module Sitecore Hackathon Category
-personalize JSS client behaviour based on data from the sitecore server.
+**Sitecore Hackathon Website – This idea is sooo meta! Several years have passed with the current version and it’s in need of a refresh.**
 
 ## How does the end user use the Module?
 Personalization based the on the user context is showcased using a simple game. While playing the game the running highscore is shown within the overall highscore list.
