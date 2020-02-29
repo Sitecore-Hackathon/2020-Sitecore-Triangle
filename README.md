@@ -30,13 +30,13 @@ Current **Sitecore Hackathon Website** is not very user interactive and not easy
 * **Home Page** will provide:
     * Promo/Hero Banner: Content Author can setup rich content
     * Listing of Last 03 Hackathon events
-* Content Author can create Judge details (rich text) for every year Hackathon event
-* Content Author can manage the Hero banner/Promo Content for the Home Page
-* End User can submit the Hackathon registration request via **Hackathon Registration Form**
-* **Hackathon Registration Form** having time limit validation for Hackathon registration and after that user will see the custom message and this message can be setup by the Content Author
-* Once **Hackathon Registration Form** submitted by the End user then Thank You message would be visible to user and this message can be setup by the Content Author
+* Content Author can create **Judge details (rich text)** for every year Hackathon event
+* Content Author can manage the **Hero banner/Promo Content** for the Home Page
+* End User can submit the **Hackathon registration request** via **Custom Hackathon Registration Form**
+* **Hackathon Registration Form** having **time limit validation** for Hackathon registration and after that user will see the custom message and this message can be setup by the Content Author
+* Once **Hackathon Registration Form** submitted by the End user then **Thank You message** would be visible to user and this message can be setup by the Content Author
 * After submission of **Hackathon Registration Form** team details would be stored in the **MASTER DB** with this Content Author/Admin can review the content and publish after validaiton to **WEB DB**
-* End user can view listing of **Hackathon's**
+* End user can view **listing of Hackathon's**
 * Each year **Hackathon** will provide:
     * Hackathon Details: Content Author can setup rich content
     * Listing of Teams participating in Hackathon
@@ -56,15 +56,28 @@ Current **Sitecore Hackathon Website** is not very user interactive and not easy
 **Sitecore Hackathon Website – This idea is sooo meta! Several years have passed with the current version and it’s in need of a refresh.**
 
 ## How does the end user use the Module?
-Personalization based the on the user context is showcased using a simple game. While playing the game the running highscore is shown within the overall highscore list.
+#### Pre-requisites
+This module depends on the following
+* Sitecore 9.3 Initial Release
+* Sitecore Powershell Extensions (SPE)
+* Sitecore Experience Accelerator
+
+#### Configuration/Setup
+* Download the Sitecore Package which contains:
+    * Required Template
+    * Required Content Tree items
+    
 
 ## Screenshots
-This solution could be adapted to fit other needs but the general pattern remains the same and proves to be very effective.
-We have tried to create the sample Sitecore Hackathon Site using **[Sitecore Experience Accelerator](https://doc.sitecore.com/users/sxa/17/sitecore-experience-accelerator/en/introducing-sitecore-experience-accelerator.html)** and performed following steps:
+#### Home Page
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/HomePage.jpg" /><br />
 
-#### Features include:
+#### Hackathon Registration Form
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-RegistrationForm.png" /><br />
 
-* Habhitat DI
-* Sample Features
-* Sitecore 9.1 ready
+#### Listing of Hackathon's
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-Listing.png" /><br />
+
+#### Hackathon Details
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-Details.png" /><br />
 
