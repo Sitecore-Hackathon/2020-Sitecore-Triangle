@@ -76,8 +76,13 @@ This module depends on the following
       <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Media Library.png" /><br />
     * **Page/Partial Design:** <br/>
       <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore SXA Page-Partial Design.png" /><br />
-
+* Each Year following configuration/item needs to be created/changes:
+    * Create the New Year item at **/sitecore/content/Sitecore/Hackathon/HackathonTeams/** like **2021**
+    * Inside new year folder i.e. 2021 (which created above), create **Judge Folder** and then create required **Judge** items.
+    * Inside new year folder i.e. 2021 (which created above), create **Participant Folder**.
+    * Copy path of newly created **Participant Folder** and goto **/sitecore/content/Sitecore/Hackathon/Data/HackathonTeam/HackathonRegistration** and past the url. This url used **Custom Hackathon Registration Form** to store the participant details.
     
+   
 
 ## Screenshots
 #### Home Page
