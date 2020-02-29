@@ -97,3 +97,8 @@ This module depends on the following
 #### Hackathon Details
 <img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Hackathon-Details.png" /><br />
 
+## Video
+
+[Download video](https://drive.google.com/file/d/1yxxlIfTJO9idTdkE40c6QIHNuVHTVa_V/view?usp=drivesdk).
+
+[![Sitecore Hackathon Video Embedding Alt Text](https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/VideoThubnailImage.jpg)](https://drive.google.com/file/d/1yxxlIfTJO9idTdkE40c6QIHNuVHTVa_V/view?usp=drivesd)
