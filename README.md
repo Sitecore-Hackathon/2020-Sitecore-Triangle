@@ -1,5 +1,5 @@
 
-<img src="https://1.bp.blogspot.com/-8juFM5WwQBU/XQs2FnRiNZI/AAAAAAAAG2g/Q39yZq7QdlE2sz04r62BSZsFXBIJSii7wCLcBGAs/s1600/sitecore-helixbase.png" /><br />
+<img src="https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Team-Sitecore%20Triangle.PNG" /><br />
 
 # Sitecore Triangle
 
