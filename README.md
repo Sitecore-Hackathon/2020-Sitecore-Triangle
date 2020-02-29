@@ -63,7 +63,7 @@ This module depends on the following
 * Sitecore Experience Accelerator
 
 #### Configuration/Setup
-* Download the Sitecore Package (https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/Sitecore Hackathon 2020.zip) which contains:
+* Download the Sitecore Package (https://github.com/Sitecore-Hackathon/2020-Sitecore-Triangle/blob/master/documentation/SitecoreHackathon2020.zip) which contains:
     * Required Template
     * Required Content Tree items
 * Install the Downloaded Sitecore Package
