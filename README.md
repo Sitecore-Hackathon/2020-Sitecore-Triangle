@@ -21,7 +21,10 @@ The **Sitecore Triangle** team picked-up the above mentioned topic and used foll
 This solution will be used to create the **[Sitecore Experience Accelerator](https://doc.sitecore.com/users/sxa/17/sitecore-experience-accelerator/en/introducing-sitecore-experience-accelerator.html)** based Sitecore Hackathon website.
 #### Features include:
 * Sample Site
-* Content Author can create Judge details for every year Hackathon event
+* **Home Page** will provide:
+    * Promo/Hero Banner: Content Author can setup rich content
+    * Listing of Last 03 Hackathon events
+* Content Author can create Judge details (rich text) for every year Hackathon event
 * Content Author can manage the Hero banner/Promo Content for the Home Page
 * End User can submit the Hackathon registration request via **Hackathon Registration Form**
 * **Hackathon Registration Form** having time limit validation for Hackathon registration and after that user will see the custom message and this message can be setup by the Content Author
@@ -29,11 +32,11 @@ This solution will be used to create the **[Sitecore Experience Accelerator](htt
 * After submission of **Hackathon Registration Form** team details would be stored in the **MASTER DB** with this Content Author/Admin can review the content and publish after validaiton to **WEB DB**
 * End user can view listing of **Hackathon's**
 * Each year **Hackathon** will provide:
-* Habhitat DI
-* Sample Features
-* Sitecore 9.1 ready
+    * Hackathon Details: Content Author can setup rich content
+    * Listing of Teams participating in Hackathon
+    * Listing of Judge details (rich text) in Hackathon
 
-After submission of **Hackathon Registration Form** team details would be stored in the **MASTER DB** with this Content Author/Admin can review the content and publish after validaiton
+
 
 ## Module Sitecore Hackathon Category
 personalize JSS client behaviour based on data from the sitecore server.
